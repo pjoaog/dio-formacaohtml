@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Tecnologia com Jota Gê</title>
+</head>
+
+<body>
+    <h1>HTML: como funciona?</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+        <li><a href="#como-funciona">Como funciona o HTML</a></li>
+        <li><a href="#estrutura-basica">Estrutura básica do HTML</a></li>
+        <li><a href="#falando-sobre-tags">Falando sobre tags</a></li>
+    </ul>
+
+
+    <br/>
+    <!-- Como funciona o HTML -->
+    <h2 id="como-funciona">Como funciona o HTML</h2>
+    <p> O <strong>HTML</strong>, ou <em>HyperText Markup Language</em>, é uma linguagem de marcação usada para criar a estrutura de páginas na internet. </p>
+    <p> A estrutura de uma página HTML é interpretada, processada e exibida pelos navegadores, conforme as tags configuradas no código. </p>
+    <p> Os documentos HTML são arquivos que possuem extensão <code>.html</code> ou <code>.htm</code>. </p>
+
+
+    <br/>
+    <!-- Estrutura básica do HTML -->
+    <h2 id="estrutura-basica">Estrutura básica do HTML</h2>
+    <p> Todo documento HTML começa com uma estrutura básica, que é praticamente padrão e sempre deve ser seguida para garantir o funcionamento correto da página. </p>
+    <p> Editores de código como Sublime Text ou Visual Studio Code possuem atalhos que facilitam a criação dessa estrutura inicial. </p>
+    <br/>
+
+    <p> A tag <code><strong>&lt;html&gt;</strong></code> é a raiz do documento e indica ao navegador que o conteúdo é código HTML, permitindo que ele seja interpretado corretamente. </p>
+    <p> A tag <code><strong>&lt;head&gt;</strong></code> contém informações não visíveis diretamente ao usuário, como vínculos com arquivos externos, scripts e metadados. </p>
+    <p> A tag <code><strong>&lt;body&gt;</strong></code> representa o corpo da página, onde está todo o conteúdo visível ao usuário, incluindo textos, imagens, vídeos e formulários. </p>
+    <br/>
+
+
+    <!-- Falando sobre tags -->
+    <h2 id="falando-sobre-tags">Falando sobre tags</h2>
+    <p> <strong>Tags</strong> são os elementos básicos que definem a estrutura e o significado do conteúdo em uma página web. </p>
+    <p> Elas atuam como etiquetas que indicam o início e o fim de diferentes tipos de conteúdo — como títulos, parágrafos, imagens e links — ajudando a organizar e apresentar o conteúdo visualmente. </p>
+    <br/>
+
+    <p> As tags são escritas entre os símbolos de "menor que" e "maior que" (<code>&lt;</code> e <code>&gt;</code>), por exemplo: <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;img&gt;</code>. </p>
+    <p> Geralmente, as tags aparecem em pares: uma de abertura e outra de fechamento. A tag de fechamento contém uma barra (/) antes do nome da tag, por exemplo: <code>&lt;p&gt;...&lt;/p&gt;</code>. </p>
+    <p> Algumas tags são auto-fecháveis (self-closing), ou seja, não precisam de uma tag de fechamento separada, como <code>&lt;br/&gt;</code> (quebra de linha) e <code>&lt;img/&gt;</code> (imagem). </p>
+
+    <h3>Tags Textuais</h3>
+    <p><strong>Estruturais (bloco de texto) — definem hierarquia e organização:</strong></p>
+    <ul>
+        <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>…: cabeçalhos usados para títulos e subtítulos, com hierarquia decrescente de importância.</li>
+        <li><code>&lt;p&gt;</code>: define um parágrafo, usado para textos corridos.</li>
+        <li><code>&lt;blockquote&gt;</code>: representa uma citação destacada.</li>
+    </ul>
+
+    <p><strong> Formatação (semânticas e não semânticas) — definem aparência e significado: </strong></p>
+    <ul>
+        <li><code>&lt;strong&gt;</code>: ênfase forte, texto em negrito com significado semântico.</li>
+        <li><code>&lt;b&gt;</code>: texto em negrito, sem ênfase semântica.</li>
+        <li><code>&lt;u&gt;</code>: texto sublinhado.</li>
+        <li><code>&lt;i&gt;</code>: texto em itálico, sem ênfase semântica.</li>
+        <li><code>&lt;mark&gt;</code>: texto marcado ou destacado.</li>
+        <li><code>&lt;sup&gt;</code>: sobrescrito (exemplo: x²).</li>
+        <li><code>&lt;sub&gt;</code>: subscrito (exemplo: H₂O).</li>
+    </ul>
+
+    <h3>Tags de listas</h3>
+    <ul>
+        <li><code>&lt;ol&gt;</code>: lista ordenada (com números ou letras).</li>
+        <li><code>&lt;ul&gt;</code>: lista não ordenada, com marcadores.</li>
+        <li><code>&lt;li&gt;</code>: item da lista, usado dentro de <code>&lt;ol&gt;</code> ou <code>&lt;ul&gt;</code>.</li>
+    </ul>
+
+    <h3>Tags de links</h3>
+    <p><strong>Links</strong> conectam uma página a outra ou a uma seção específica.</p>
+    <p> A tag <code>&lt;a&gt;</code>, conhecida como âncora, cria links para outras páginas, seções do mesmo documento, arquivos ou ações (como enviar e-mail). O destino do link é definido pelo atributo <code>href</code>. </p>
+    <pre><code>&lt;a href="https://www.example.com"&gt;Visitar site&lt;/a&gt;</code></pre>
+
+    <h3>Atributos das tags</h3>
+    <p> Atributos são palavras-chave usadas dentro de tags para fornecer informações adicionais ou modificar seu comportamento. Cada atributo tem um nome e um valor. Exemplos comuns: </p>
+    <ul>
+        <li><strong>id:</strong> identificador único para referência, geralmente usado em JavaScript.</li>
+        <li><strong>class:</strong> especifica um ou mais nomes de classe para estilização ou lógica.</li>
+        <li><strong>style:</strong> define estilos CSS diretamente no elemento.</li>
+        <li><strong>src:</strong> especifica o caminho para um arquivo, como imagens ou scripts.</li>
+        <li><strong>type:</strong> define o tipo de dado em campos de entrada (inputs).</li>
+    </ul>
+
+</body>
+
+</html>
