@@ -10,6 +10,9 @@ Cada desafio está em uma branch específica, para facilitar a organização e a
 - **Desafio 01** (branch: `desafio-01`):  
   Criar uma página web utilizando as tags aprendidas.
 
+- **Desafio 02** (branch: `desafio-02`):  
+  Site "quase" completo em HTML e CSS.
+
 
 ## Como acessar os desafios
 
