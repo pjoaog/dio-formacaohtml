@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <!-- Menu -->
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link" href="index.html">Página Principal</a></li>
+                <li class="menu-item"><a class="menu-link" href="about.html">Sobre a Clínica</a></li>
+                <li class="menu-item"><a class="menu-link" href="schedules.html">Horário de Atendimento</a></li>
+                <li class="menu-item"><a class="menu-link" href="contact.html">Contato</a></li>
+            </ul>
+        </div>
+
+
+        <div class="main">
+            <!-- Header -->
+            <div class="header">
+                <img class="header-logo" src="../assets/logos/contact-logo.png" alt="Logo da página de 'Contato'">
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <h1 class="content-title">Contato</h1>
+
+                <p class="content-text content-intro-text">Estamos aqui para cuidar de você! Conte conosco para agendamentos,
+                    dúvidas ou orientações. Ligue para nossos números, visite nossa unidade em São José dos Campos (SP)
+                    ou envie uma mensagem por e-mail.</p>
+
+                <h3 class="content-section-title">Nossos contatos</h3>
+                <div class="contact-phone-cards">
+                    <div class="contact-card">
+                        <img src="../assets/icons/phone-icon.svg" alt="Ícone de telefone" width="30">
+                        <h4>Telefone</h4>
+                        <p class="phone-number">(12) 2121-2121</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <img src="../assets/icons/whatsapp-icon.svg" alt="Ícone do WhatsApp" width="30">
+                        <h4>WhatsApp</h4>
+                        <p class="phone-number">(12) 9 1234-5678</p>
+                    </div>
+                </div>
+
+                <h3 class="content-section-title">Visite-nos!</h3>
+                <div class="contact-location-card">
+                    <div class="contact-location-info">
+                        <div class="contact-location-address">
+                            <img src="../assets/icons/location-icon.svg" width="16" alt="Ícone de localização">
+                            <p class="contact-location-address-text">São José dos Campos, SP - Brasil</p>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117359.22358205706!2d-45.94541344582949!3d-23.189327004069845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1757809414325!5m2!1spt-BR!2sbr"
+                        width="100%" height="250" style="border:0; border-radius: 0 0 10px 10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <h3 class="content-section-title">Entre em contato conosco!</h3>
+                <form class="contact-form" action="" method="post">
+                    <label class="contact-form-label" for="nome">Nome:</label>
+                    <input class="contact-form-input" type="text" name="nome" id="nome">
+
+                    <label class="contact-form-label" for="email">E-mail:</label>
+                    <input class="contact-form-input" type="email" name="email" id="email">
+
+                    <label class="contact-form-label" for="assunto">Assunto:</label>
+                    <input class="contact-form-input" type="text" name="assunto" id="assunto">
+
+                    <label class="contact-form-label" for="mensagem">Mensagem:</label>
+                    <textarea class="contact-form-textarea" name="mensagem" id="mensagem"
+                        placeholder="Digite aqui sua mensagem..."></textarea>
+
+                    <div class="contact-form-buttons">
+                        <button class="contact-form-button" type="submit" onclick="alert('Enviado!')">Enviar</button>
+                        <button class="contact-form-button" type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Footer -->
+            <div class="footer">
+
+                <div class="footer-social">
+                    <h3>Nos siga!</h3>
+
+                    <div class="footer-social-icons">
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer-social-icon" src="../assets/icons/instagram-icon.svg" alt="Logo do Instagram">
+                        </a>
+
+                        <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+                            <img class="footer-social-icon" src="../assets/icons/facebook-icon.svg" alt="Logo do Facebook">
+                        </a>
+
+                        <a href="https://br.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="footer-social-icon" src="../assets/icons/linkedin-icon.svg" alt="Logo do LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+
+                    <div class="footer-contact-phones">
+                        <p>(12) 2121-2121</p>
+                        <p>(12) 9 1234-5678</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
