@@ -1,0 +1,337 @@
+/* ----- Geral ----- */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Cabeçalho ----- */
+.header .header-logo {
+    padding: 1rem;
+    width: 80px;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    padding: 15px;
+    background-color: #f9f9fb;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* ----- Conteúdo ----- */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: grid;
+    grid-template-areas: "anchors article sidebar";
+    grid-template-columns: minmax(0, 20rem) minmax(0, 2.5fr) minmax(0, 20rem);
+    gap: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    max-width: 1600px;
+    flex: 1 0 auto;
+}
+
+/* -- Article -- */
+.article {
+    grid-area: article;
+}
+
+.article::after {
+    content: "";
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.article-title {
+    margin: 2rem 0 1rem;
+}
+
+.article-title::after {
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 3px;
+    background: #000;
+}
+
+/* -- Section -- */
+.section-title {
+    margin: 2rem 0 1.2rem;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 3px;
+    background-color: #cdcdcd;
+}
+
+.section-title-subsection {
+    margin-bottom: 0.5rem;
+}
+
+.section-list {
+    margin: 0;
+}
+
+.content-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.content-list-item {
+    background-color: #f5f5f5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.content-list-item a {
+    text-decoration: none; 
+    color: #333;
+    font-weight: 500;
+}
+
+.content-list-item a:hover {
+    color: #0066cc;
+}
+
+.content-list-item:hover {
+    background-color: #e0e0e0;
+}
+
+.section-text {
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.section-text+.section-text {
+    margin-top: 1rem;
+}
+
+.section-text+.section-title-subsection {
+    margin-top: 1.5rem;
+}
+
+.section-list+.section-title-subsection {
+    margin-top: 1.5rem;
+}
+
+/* -- Início -- */
+.section-init {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-init-container {
+    display: block;
+    overflow: hidden;
+}
+
+.section-init-image {
+    flex-shrink: 0;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    float: left;
+}
+
+.section-init-image img {
+    display: block;
+    width: 200px;
+    height: auto;
+}
+
+.section-init-text {
+    width: 100%;
+}
+
+/* -- Títulos -- */
+.section-titles-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #000;
+    background-color: #fff;
+}
+
+.section-titles-table th,
+.section-titles-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.section-titles-table caption {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+}
+
+.section-titles-category {
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.competition-name {
+    font-weight: bold;
+}
+
+.section-titles-table a:focus,
+.section-titles-table td:focus {
+    outline: 2px solid #005ea5;
+}
+
+.section-titles-table .section-titles-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-titles-table a:focus,
+.section-titles-table td:focus {
+    outline: 2px solid #005ea5;
+}
+
+.section-titles-table th:nth-child(1),
+.section-titles-table td:nth-child(1) {
+    width: 50px; /* imagem */
+}
+
+.section-titles-table th:nth-child(2),
+.section-titles-table td:nth-child(2) {
+    width: 350px; /* competição */
+}
+
+.section-titles-table th:nth-child(3),
+.section-titles-table td:nth-child(3) {
+    width: 40px; /* títulos */
+}
+
+.section-titles-table th:nth-child(4),
+.section-titles-table td:nth-child(4) {
+    width: auto;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.section-titles-icon {
+    max-width: 30px;
+    max-height: 35px;
+    text-align: center;
+}
+
+/* -- Anchors & Sidebar -- */
+.sidebar {
+    grid-area: sidebar;
+    border-left: solid 1px #cdcdcd;
+}
+
+.anchors {
+    grid-area: anchors;
+    border-right: solid 1px #cdcdcd;
+}
+
+.anchors-div,
+.sidebar-div {
+    margin: 5rem auto 0;
+    padding: 1.5rem;
+    width: 200px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    box-shadow: none;
+}
+
+.anchors-title,
+.sidebar-title {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.anchors-title::after,
+.sidebar-title::after {
+    content: "";
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 2px;
+    background: #e0e0e0;
+}
+
+.anchors-div ul,
+.sidebar-div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.anchors-div a,
+.sidebar-div a {
+    display: block;
+    padding: 0.4rem 0;
+    text-decoration: none;
+    color: #444;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+}
+
+.anchors-div a:hover,
+.sidebar-div a:hover {
+    padding-left: 0.8rem;
+    background: #000;
+    color: #fff;
+}
+
+/* ----- Rodapé ----- */
+.footer {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
